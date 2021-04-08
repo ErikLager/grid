@@ -1,0 +1,85 @@
+@import url(themes/dark.css);
+@keyframes c1 {
+    from {
+        background-color: var(--color1);
+    }
+    to {
+        background-color: var(--color1a);
+    }
+}
+
+@keyframes c2 {
+    from {
+        background-color: var(--color2);
+    }
+    to {
+        background-color: var(--color2a);
+    }
+}
+
+@keyframes c3 {
+    from {
+        background-color: var(--color3);
+    }
+    to {
+        background-color: var(--color3a);
+    }
+}
+
+@keyframes c4 {
+    from {
+        background-color: var(--color4);
+    }
+    to {
+        background-color: var(--color4a);
+    }
+}
+
+@keyframes c5 {
+    from {
+        background-color: var(--color5);
+    }
+    to {
+        background-color: var(--color5a);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10rem 10rem 10rem;
+}
+
+.header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    animation: c1 5s infinite alternate;
+}
+
+.menu {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    animation: c2 5s infinite alternate;
+}
+
+.main {
+    grid-column: 2;
+    grid-row: 2;
+    animation: c3 5s infinite alternate;
+}
+
+.right {
+    grid-column: 3;
+    grid-row: 2;
+    animation: c4 5s infinite alternate;
+}
+
+.footer {
+    grid-column: 2 / 4;
+    animation: c5 5s infinite alternate;
+}
