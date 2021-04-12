@@ -1,0 +1,54 @@
+@import url(/themes/muted.css);
+@keyframes c1 {
+    from {
+        background-color: var(--color1);
+    }
+    to {
+        background-color: var(--color1a);
+    }
+}
+
+@keyframes c2 {
+    from {
+        background-color: var(--color2);
+    }
+    to {
+        background-color: var(--color2a);
+    }
+}
+
+@keyframes c3 {
+    from {
+        background-color: var(--color3);
+    }
+    to {
+        background-color: var(--color3a);
+    }
+}
+
+@keyframes c4 {
+    from {
+        background-color: var(--color4);
+    }
+    to {
+        background-color: var(--color4a);
+    }
+}
+
+@keyframes c5 {
+    from {
+        background-color: var(--color5);
+    }
+    to {
+        background-color: var(--color5a);
+    }
+}
+
+:root {
+    --headeranimation: c1 5s infinite alternate;
+    --menuanimation: c2 5s infinite alternate;
+    --mainanimation: c3 5s infinite alternate;
+    --rightanimation: c4 5s infinite alternate;
+    --footeranimation: c5 5s infinite alternate;
+    --bordercolor: var(--border);
+}
